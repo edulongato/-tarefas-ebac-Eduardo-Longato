@@ -1,0 +1,5 @@
+Programação procedural:
+O termo Programação procedural é às vezes utilizado como sinônimo de Programação imperativa, mas pode se referir a um paradigma de programação baseado no conceito de chamadas a procedimento. Os Procedimentos, também conhecidos como rotinas, subrotinas, métodos, ou funções simplesmente contêm um conjunto de passos computacionais a serem executados.
+
+Programação Orientada a objetos:
+A programação orientada a objetos surgiu como uma alternativa a essas características da programação estruturada. O intuito da sua criação também foi o de aproximar o manuseio das estruturas de um programa ao manuseio das coisas do mundo real, daí o nome "objeto" como uma algo genérico, que pode representar qualquer coisa tangível.
