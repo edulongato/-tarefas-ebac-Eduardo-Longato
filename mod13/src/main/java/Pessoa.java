@@ -13,7 +13,6 @@ public abstract class Pessoa {
         System.out.println("Nome fantasia é: " + this.nomeFantasia);
     }
 
-
     public String getNome() {
         return nome;
     }
