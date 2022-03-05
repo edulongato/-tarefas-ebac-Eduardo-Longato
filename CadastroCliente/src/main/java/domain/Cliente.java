@@ -12,14 +12,19 @@ public class Cliente {
     private String cidade;
     private String estado;
 
-    public Cliente(String nome, Long cpf, Long tel, String end, Integer numero, String cidade, String estado) {
+    public Cliente(String nome, String cpf, Long tel, String end, Integer numero, String cidade, String estado) {
         this.nome = nome;
-        this.cpf = cpf;
-        this.tel = tel;
+        this.cpf = null;
+        this.tel = null;
         this.end = end;
-        this.numero = numero;
+        this.numero = null;
         this.cidade = cidade;
         this.estado = estado;
+    }
+
+    public Cliente(String dadosSeparado, String dadosSeparado1, String dadosSeparado2,
+                   String dadosSeparado3, String dadosSeparado4, String dadosSeparado5, String dadosSeparado6) {
+
     }
 
     public String getNome() {

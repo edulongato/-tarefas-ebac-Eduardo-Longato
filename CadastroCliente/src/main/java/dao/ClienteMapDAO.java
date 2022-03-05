@@ -45,8 +45,14 @@ public class ClienteMapDAO implements IClienteDAO {
     }
 
     @Override
+    public Cliente consultar(long l) {
+        return null;
+    }
+
+    @Override
     public Cliente consultar(Long cpf) {
-        return this.map.get(cpf);
+        this.map.get(cpf);
+        return null;
     }
 
     @Override

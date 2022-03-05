@@ -12,7 +12,9 @@ public interface IClienteDAO {
 
     public void alterar (Cliente cliente);
 
-    public Cliente consultar(Long cpf);
+    public Cliente consultar(long cpf);
+
+    Cliente consultar(Long cpf);
 
     public Collection<Cliente> buscarTodos();
 }
