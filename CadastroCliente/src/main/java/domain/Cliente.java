@@ -12,7 +12,7 @@ public class Cliente {
     private String cidade;
     private String estado;
 
-    public Cliente(String nome, String cpf, Long tel, String end, Integer numero, String cidade, String estado) {
+    public Cliente(String nome, Long cpf, Long tel, String end, Integer numero, String cidade, String estado) {
         this.nome = nome;
         this.cpf = null;
         this.tel = null;
@@ -98,7 +98,7 @@ public class Cliente {
 
     @Override
     public String toString() {
-        return "domain.domain.Cliente{" +
+        return "Cliente{" +
                 "nome='" + nome + '\'' +
                 ", cpf=" + cpf +
                 '}';

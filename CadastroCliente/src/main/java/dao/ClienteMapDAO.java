@@ -45,7 +45,7 @@ public class ClienteMapDAO implements IClienteDAO {
     }
 
     @Override
-    public Cliente consultar(long l) {
+    public Cliente consultar(Long cpf) {
         return null;
     }
 

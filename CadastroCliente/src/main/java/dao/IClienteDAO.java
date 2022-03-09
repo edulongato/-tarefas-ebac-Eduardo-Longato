@@ -12,7 +12,7 @@ public interface IClienteDAO {
 
     public void alterar (Cliente cliente);
 
-    public Cliente consultar(long cpf);
+    public Cliente consultar(long l);
 
     Cliente consultar(Long cpf);
 

@@ -21,9 +21,6 @@ public class App {
             }
         }
 
-        opcao = JOptionPane.showInputDialog(null,
-                "Opcao invalida digite 1 para cadastro, 2 para consultar, 3 para exclusao, 4 para alteracao ou 5 para sair.",
-                "Green dinner", JOptionPane.INFORMATION_MESSAGE);
 
         while (isOpcaoValida(opcao)) {
 
@@ -31,7 +28,7 @@ public class App {
                 sair();
             }else if (isCadastro(opcao)) {
                 String dados = JOptionPane.showInputDialog(null,
-                        "Digite os dados do cliente separados por vígula, conforme exemplo: Nome, CPF, Telefone, Endereço, Número, Cidade e Estado",
+                        "Digite os dados do cliente separados por virgula, conforme exemplo: Nome, CPF, Telefone, Endereco, Numero, Cidade e Estado",
                         "Cadastro", JOptionPane.INFORMATION_MESSAGE);
                 cadastrar(dados);
             } else if (isConsulta(opcao)) {
@@ -52,8 +49,12 @@ public class App {
             }
 
             opcao = JOptionPane.showInputDialog(null,
+                "Opcao invalida digite 1 para cadastro, 2 para consultar, 3 para exclusao, 4 para alteracao ou 5 para sair.",
+                "Green dinner", JOptionPane.INFORMATION_MESSAGE);
+
+            /*opcao = JOptionPane.showInputDialog(null,
                     "Digite 1 para cadastro, 2 para consulta, 3 para cadastro, 4 para alteração ou 5 para sair",
-                    "Green dinner", JOptionPane.INFORMATION_MESSAGE);
+                    "Green dinner", JOptionPane.INFORMATION_MESSAGE);*/
 
         }
     }
