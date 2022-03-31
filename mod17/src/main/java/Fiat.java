@@ -9,20 +9,22 @@ public class Fiat implements Carro {
     }
 
     @Override
-    public void nome(String nome) {
+    public String nome(String nome) {
 
+        return nome;
     }
 
     @Override
-    public void montadora(String montadora) {
+    public String fabrica(String montadora) {
 
+        return montadora;
     }
 
     @Override
     public String toString() {
         return "{" +
                 "modelo='" + modelo + '\'' +
-                ", montadora='" + montadora + '\'' +
+                ", fabrica='" + montadora + '\'' +
                 '}';
     }
 

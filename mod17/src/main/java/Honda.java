@@ -9,20 +9,20 @@ public class Honda implements Carro {
     }    
 
     @Override
-    public void nome(String nome) {
-        System.out.println("CIVIC" + modelo);
+    public String nome(String nome) {
+       return nome;
     }
 
     @Override
-    public void montadora(String marca) {
-        System.out.println("TOYOTA" + montadora);
+    public String fabrica(String marca) {
+       return marca;
     }
 
     @Override
     public String toString() {
         return "{" +
                 "modelo='" + modelo + '\'' +
-                ", montadora='" + montadora + '\'' +
+                ", fabrica='" + montadora + '\'' +
                 '}';
     }
 

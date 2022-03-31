@@ -9,20 +9,20 @@ public class Toyota implements Carro {
     }
 
     @Override
-    public void nome(String nome) {
-
+    public String nome(String nome) {
+        return null;
     }
 
     @Override
-    public void montadora(String marca) {
-
+    public String fabrica(String marca) {
+        return null;
     }
 
     @Override
     public String toString() {
         return "{" +
                 "modelo='" + modelo + '\'' +
-                ", montadora='" + montadora + '\'' +
+                ", fabrica='" + montadora + '\'' +
                 '}';
     }
 
@@ -33,6 +33,7 @@ public class Toyota implements Carro {
     public String getMontadora() {
         return montadora;
     }
+
 
 
 }

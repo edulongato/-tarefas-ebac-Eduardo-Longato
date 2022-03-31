@@ -1,8 +1,8 @@
 public interface Carro {
 
 
-    void nome(String nome);
+    String nome(String nome);
 
-    void montadora(String marca);
+    String fabrica(String marca);
 
 }
