@@ -1,8 +1,6 @@
-public interface Carro {
+public interface Carro <T>{
 
+    T nome(T nome);
 
-    String nome(String nome);
-
-    String fabrica(String marca);
-
+    T fabrica(T marca);
 }

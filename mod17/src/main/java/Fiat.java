@@ -1,23 +1,11 @@
-public class Fiat implements Carro {
+public class Fiat<T> implements Carro {
 
-    private String modelo = "PUNTO";
-    private String montadora = "FIAT";
+    private T modelo;
+    private T montadora;
 
-    public Fiat() {
-        this.modelo = getModelo();
-        this.montadora = getMontadora();
-    }
-
-    @Override
-    public String nome(String nome) {
-
-        return nome;
-    }
-
-    @Override
-    public String fabrica(String montadora) {
-
-        return montadora;
+    public Fiat(String modelo, String montadora) {
+        this.modelo = (T) nome(modelo);
+        this.montadora = (T) fabrica(montadora);
     }
 
     @Override
@@ -28,13 +16,22 @@ public class Fiat implements Carro {
                 '}';
     }
 
-    public String getModelo() {
+    public T getModelo() {
         return modelo;
     }
 
-    public String getMontadora() {
+    public T getMontadora() {
         return montadora;
     }
 
 
+    @Override
+    public Object nome(Object nome) {
+        return nome;
+    }
+
+    @Override
+    public Object fabrica(Object marca) {
+        return marca;
+    }
 }

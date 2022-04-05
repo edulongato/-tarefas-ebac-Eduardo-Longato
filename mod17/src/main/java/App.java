@@ -5,17 +5,20 @@ public class App {
 
     public static void main(String[] args) {
 
-        List<Carro> carros = new ArrayList<>();
-        carros.add(new Fiat());
-        carros.add(new Honda());
-        carros.add(new Toyota());
+        List<String> carros = new ArrayList<>();
+        carros.add(String.valueOf(new Fiat("Punto", "Fiat")));
+        carros.add(String.valueOf(new Honda("Civic", "Honda")));
+        carros.add(String.valueOf(new Toyota("Corolla", "Toyota")));
+        carros.add(String.valueOf(new Toyota<String>("Accord", "Toyota")));
 
-        imprimirCarro(carros);
+        imprimirCarros(carros);
     }
 
-    private static void imprimirCarro(List<? extends Carro> carros) {
-        for (Carro car : carros) {
+    private static void imprimirCarros(List<String> carros) {
+        for(String car : carros){
             System.out.println(car);
         }
     }
+
+
 }
