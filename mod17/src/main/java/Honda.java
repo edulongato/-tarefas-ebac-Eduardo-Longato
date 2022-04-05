@@ -3,7 +3,7 @@ public class Honda<T> implements Carro{
     private T modelo;
     private T montadora;
 
-    public Honda(String modelo, String montadora) {
+    public Honda(T modelo, T montadora) {
         this.modelo = (T) nome(modelo);
         this.montadora = (T) fabrica(montadora);
     }

@@ -6,9 +6,9 @@ public class App {
     public static void main(String[] args) {
 
         List<String> carros = new ArrayList<>();
-        carros.add(String.valueOf(new Fiat("Punto", "Fiat")));
-        carros.add(String.valueOf(new Honda("Civic", "Honda")));
-        carros.add(String.valueOf(new Toyota("Corolla", "Toyota")));
+        carros.add(String.valueOf(new Fiat<String>("Punto", "Fiat")));
+        carros.add(String.valueOf(new Honda<String>("Civic", "Honda")));
+        carros.add(String.valueOf(new Toyota<String>("Corolla", "Toyota")));
         carros.add(String.valueOf(new Toyota<String>("Accord", "Toyota")));
 
         imprimirCarros(carros);
