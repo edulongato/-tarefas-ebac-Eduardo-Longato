@@ -1,4 +1,6 @@
+import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
+import java.util.Arrays;
 
 public class TarefaReflactions {
 
@@ -10,9 +12,10 @@ public class TarefaReflactions {
             System.out.println(anInterface);
         }
 
-        Class<Tabela> classe = Tabela.class;
-        for (Field atributo : classe.getDeclaredFields()) {
-            System.out.println(atributo.getName());
+        Class<Tabela> c = Tabela.class;
+        Annotation[] atributo = c.getAnnotations();
+        for (Annotation anAtributo : atributo) {
+            System.out.println(anAtributo);
         }
     }
 }
