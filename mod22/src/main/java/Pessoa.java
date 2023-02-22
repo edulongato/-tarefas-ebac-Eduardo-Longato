@@ -1,4 +1,5 @@
 import java.util.List;
+import java.util.Objects;
 
 public class Pessoa {
 
@@ -55,5 +56,17 @@ public class Pessoa {
         Pessoa pessoa3 = new Pessoa("p3", "Marcio Santos", "Espanha", 28);
         Pessoa pessoa4 = new Pessoa("p4", "Yoko Sakamoto", "Japão", 35);
         return List.of(pessoa1, pessoa2, pessoa3, pessoa4);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Pessoa pessoa)) return false;
+        return Objects.equals(getId(), pessoa.getId()) && Objects.equals(getNome(), pessoa.getNome());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getId(), getNome());
     }
 }
