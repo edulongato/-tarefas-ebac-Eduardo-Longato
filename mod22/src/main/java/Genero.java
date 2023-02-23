@@ -52,10 +52,10 @@ public class Genero {
     }
 
     public List<Genero> popularGenero(){
-        Genero gen1 = new Genero("g1","Carlos", "Masculino", 41 );
-        Genero gen2 = new Genero("g2","Maria", "Feminino", 37 );
-        Genero gen3 = new Genero("g3","Alberto", "Masculino", 22 );
-        Genero gen4 = new Genero("g4","Sandra", "Feminino", 30 );
+        Genero gen1 = new Genero("g1","Carlos ", "Masculino", 41 );
+        Genero gen2 = new Genero("g2","Maria ", "Feminino", 37 );
+        Genero gen3 = new Genero("g3","Alberto ", "Masculino", 22 );
+        Genero gen4 = new Genero("g4","Sandra ", "Feminino", 30 );
         return List.of(gen1, gen2, gen3, gen4);
     }
 
