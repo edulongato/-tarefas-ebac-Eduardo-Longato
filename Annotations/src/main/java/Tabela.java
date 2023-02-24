@@ -5,7 +5,9 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
+@Tabela(tabela = "tabela")
 public @interface Tabela {
     
     String tabela();
+
 }

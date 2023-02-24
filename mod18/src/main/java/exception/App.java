@@ -13,7 +13,7 @@ public class App {
 
         try {
             ClienteService.consultarCliente(opcao);
-        }catch (ClienteNaoEncontradoException e){
+        }catch (ClienteNaoEncontrado2Exception e){
             JOptionPane.showInputDialog(null,
                     e.getMessage(),
                     "Sair", JOptionPane.INFORMATION_MESSAGE);

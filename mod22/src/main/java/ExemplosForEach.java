@@ -29,6 +29,6 @@ public class ExemplosForEach {
         lista.stream()
                 .filter(pessoa -> pessoa.getNacionalidade().equals("Brasil"))
                 .map(Pessoa::getIdade)
-                .forEach(p -> System.out.println(p));
+                .forEach(System.out::println);
     }
 }
