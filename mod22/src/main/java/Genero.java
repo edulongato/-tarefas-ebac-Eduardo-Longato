@@ -35,7 +35,7 @@ public class Genero {
         this.nome = nome;
     }
 
-    public String getSexo() {
+    public String getSexo(String feminino) {
         return sexo;
     }
 
@@ -63,11 +63,11 @@ public class Genero {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Genero genero)) return false;
-        return Objects.equals(getNome(), genero.getNome()) && Objects.equals(getSexo(), genero.getSexo());
+        return Objects.equals(getNome(), genero.getNome()) && Objects.equals(getSexo("Feminino"), genero.getSexo("Feminino"));
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getNome(), getSexo());
+        return Objects.hash(getNome(), getSexo("Feminino"));
     }
 }
